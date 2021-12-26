@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDiary</title>
+    <link rel="stylesheet" href="../css/blogDiary.css">
+</head>
+
+<body>
+    <header>
+        <div id="search">
+            <form action="">
+                <input type="text" value="Search" id=" keyWorld">
+                <input type="submit" value="" id="searchButton"></form>
+
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="caption">
+            <h1>PERSONAL</h1>
+            <p>Blog by jsx</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">个人作品<span></span></a>
+                    <ul class="downList">
+                        <li><a href="workOne.html">Work one</a></li>
+                        <li><a href="workTwo.html">Work two</a></li>
+                        <li><a href="workThree.html">Work three</a></li>
+                    </ul>
+                </li>
+
+                <li class="main"><a href="#">个人博客日记</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../indexs/loveEvaluate.html">喜好评价</a></li>
+                <li><a href="../indexs/myInfo.html">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="diary">
+        <div class="imgFa">
+            <div class="img"></div>
+        </div>
+        <div class="message">
+            <h1>博客日记</h1>
+            <p>个人博客日记，记录生活的点点滴滴，还有程序中的bug，--em--,bug,--bug--,bug.....</p>
+        </div>
+    </div>
+
+    <main>
+        <h2 class="new">最新博文</h2>
+        <article class="one">
+            <h2>Article One</h2>
+            <div class="content">
+                <ul>
+                    <li>日期： 2012.12.9</li>
+                    <li>类型： Debug</li>
+                    <li>难度：⭐⭐⭐⭐⭐</li>
+                </ul>
+                <div class="word">
+                    <p class="question">问题：点击发布按钮提交表单报错：不支持POST请求的方法
+                    </p>
+                    <p class="method">
+                        解决：
+                        load(/[[@{/comments}]]/"“里我不支持这种特殊注释，改成load(”/comments"）后报错空指针，因为代码有点问题，修改后报错栈溢出，然后不知怎么的就可以了。
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+
+        <article class="two">
+            <h2>Article Two</h2>
+            <div class="content">
+                <ul>
+                    <li>日期： 2012.12.9</li>
+                    <li>类型： Debug</li>
+                    <li>难度：⭐⭐⭐⭐⭐</li>
+                </ul>
+                <div class="word">
+                    <p class="question">问题：空指针异常：Invalid property‘id’of bean class [com.basco.pojo.Blog]: Getter for
+                        property ‘id’ threw exception; nested exception is java.lang.reflect.InvocationTargetException
+                    </p>
+                    <p class="method">
+                        解决：在pojo的type方法中加setter/getter方法
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="three">
+            <h2>Article Three</h2>
+            <div class="content">
+                <ul>
+                    <li>日期： 2012.12.9</li>
+                    <li>类型： Debug</li>
+                    <li>难度：⭐⭐⭐⭐⭐</li>
+                </ul>
+                <div class="word">
+                    <p class="question">问题：点击发布按钮提交表单报错：不支持POST请求的方法
+                    </p>
+                    <p class="method">
+                        解决：load(/[[@{/comments}]]/"“里我不支持这种特殊注释，改成load(”/comments"）后报错空指针，因为代码有点问题，修改后报错栈溢出，然后不知怎么的就可以了。
+                        解决(真)：上述的特殊赋值方法需要加上 &lt;script th:inline="javascript"&gt; 才能使用内联JS，即使用[[]]这种特殊方式赋值
+                    </p>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <aside>
+                <div><img src="../images/qq.jpg" alt="">
+                    <p>我的QQ</p>
+                </div>
+                <div> <img src="../images/微信.jpg" alt="">
+                    <p>我的微信</p>
+                </div>
+            </aside>
+            <article>
+                <p>站点声明：</p>
+                <p>1.本站为个人博客，均为jxs本身设计，emm--对，少许借鉴，hh。</p>
+                <p>2.此战为jxs本身经过3天的努力，经过查阅资料，泛读互联网，总结出来的精华，必是精品，(⊙﹏⊙)em。</p>
+                <p>Copyright&copy; All by jxs.</p>
+            </article>
+        </div>
+    </footer>
+</body>
+
+</html>

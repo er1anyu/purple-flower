@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loveEvaluate</title>
+    <link rel="stylesheet" href="../css/loveEvaluate.css">
+</head>
+
+<body>
+    <header>
+        <div id="search">
+            <form action="">
+                <input type="text" value="Search" id=" keyWorld">
+                <input type="submit" value="" id="searchButton"></form>
+
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="caption">
+            <h1>PERSONAL</h1>
+            <p>Blog by jsx</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">个人作品<span></span></a>
+                    <ul class="downList">
+                        <li><a href="workOne.html">Work one</a></li>
+                        <li><a href="workTwo.html">Work two</a></li>
+                        <li><a href="workThree.html">Work three</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../indexs/blogDiary.html">个人博客日记</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li class="main"><a href="indexs/loveEvaluate.html">喜好评价</a></li>
+                <li><a href="../indexs/myInfo.html">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <form action="">
+            <h1>Evaluation form</h1>
+            <div>
+                <h2>Person message</h2>
+                <section class="one">
+                    <p><label for="name">Name:</label>
+                        <input type="text" id="text" name="username"></p>
+                    <p><label for="mail">E-mail: </label>
+                        <input type="email" id="mail" name="usermail"></p>
+                    <p><label for="tel">Tele: </label>
+                        <input type="tel" id="tel" name="usertel"></p>
+                    <p> <label for="bir">BirtyDay: </label>
+                        <input type="datetime-local" id="bit"> </p>
+                </section>
+            </div>
+            <div class="two">
+                <h2>Evaluation score</h2>
+                <section>
+                    <fieldset>
+                        <legend>Color</legend>
+                        <ul>
+                            <li>
+                                <label for="good"> <input type="radio" id="good" name="color">Good</label>
+                            </li>
+                            <li>
+                                <label for="better"> <input type="radio" id="better" name="color">Better</label>
+                            </li>
+                            <li>
+                                <label for="best"> <input type="radio" id="best" name="color">Best</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p class="select"><label for="content">Content feel: </label>
+                        <select name="contentFeel" id="content">
+                            <option value="">Well</option>
+                            <option value="">Very well</option>
+                            <option value="">Very very well</option>
+                        </select>
+                    </p>
+                    <p class="layout"><label for="layout">Layout feel:</label>
+                        <input type="range" id="layout" name="layout" min="60" max="101" step="1">
+                        <span class="layoutCount"></span></p>
+                </section>
+                <section>
+                    <p> <button type="submit">Submit?</button> </p>
+                </section>
+            </div>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <aside>
+                <div><img src="../images/qq.jpg" alt="">
+                    <p>我的QQ</p>
+                </div>
+                <div> <img src="../images/微信.jpg" alt="">
+                    <p>我的微信</p>
+                </div>
+            </aside>
+            <article>
+                <p>站点声明：</p>
+                <p>1.本站为个人博客，均为jxs本身设计，emm--对，少许借鉴，hh。</p>
+                <p>2.此战为jxs本身经过3天的努力，经过查阅资料，泛读互联网，总结出来的精华，必是精品，(⊙﹏⊙)em。</p>
+                <p>Copyright&copy; All by jxs.</p>
+            </article>
+        </div>
+    </footer>
+
+
+    <script>
+        var layout = document.querySelector("#layout");
+        var count = document.querySelector(".layoutCount");
+        count.textContent = layout.value;
+        layout.oninput = function () {
+            count.textContent = layout.value;
+        }
+    </script>
+</body>
+
+</html>

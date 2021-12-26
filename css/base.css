@@ -1,0 +1,530 @@
+/* 基础设置 */
+@font-face {
+    font-family: "headerFont";
+    src: url(../fonts/Righteous.ttf);
+}
+
+@font-face {
+    font-family: "fontOne";
+    src: url(../fonts/杨任东竹石体.ttf);
+}
+
+@font-face {
+    font-family: "fontTwo";
+    src: url(../fonts/acier.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 页眉设置 */
+
+header {
+    height: 45px;
+    width: 100%;
+    background-color: #3C265D;
+    box-shadow: 0px 4px 3px #b397e7;
+    /* margin-bottom: 2px; */
+}
+
+#search {
+    padding-top: 9px;
+    margin-left: 72%;
+    position: relative;
+}
+
+input[type=text] {
+    background-color: #211437;
+    border: 1.5px solid #6031a5;
+    color: white;
+    width: 190px;
+    line-height: 1.5rem;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    position: absolute;
+    left: 165px;
+    width: 25px;
+    height: 25px;
+    background: url("../images/搜索.png") no-repeat center;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+
+}
+
+/* 主体 */
+
+main {
+    background-image: linear-gradient(to bottom, #6E4DA1 25%, #B5ACD4 100%);
+    height: 1950px;
+    width: 100%;
+}
+
+
+/* 导航栏部分 */
+nav {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    height: 100px;
+    border-radius: 0 0 6px 6px;
+}
+
+.list ul li a span {
+    margin-left: 3px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/向右箭头.png) no-repeat;
+}
+
+.list ul li:nth-child(1):hover a span {
+    transform-origin: 10px 12px;
+    transition: all 0.3s;
+    transform: rotate(90deg);
+}
+
+.caption {
+    float: left;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.caption h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: headerFont;
+    letter-spacing: 10px;
+}
+
+.caption p {
+    position: absolute;
+    font-size: 20px;
+    font-family: fontOne;
+    top: 72px;
+    left: 173px;
+}
+
+.list ul {
+    float: right;
+    font-family: fontOne;
+    padding-top: 45px;
+    padding-right: 15px;
+    font-size: 1.35rem;
+}
+
+.list ul li {
+    padding: 8px;
+    display: inline-block;
+}
+
+.list ul li:hover {
+    border-radius: 6px;
+    background-color: #886CB4;
+}
+
+.main {
+    border-radius: 6px;
+    background-color: #886CB4;
+}
+
+.main a {
+    color: white;
+}
+
+.list ul li {
+    position: relative;
+}
+
+.downList {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+ul li:hover .downList {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -3px;
+    width: 120px;
+    height: 75px;
+    background-color: #E0DCE6;
+    transition: 0.5s height;
+}
+
+.list ul li:hover>a {
+    color: white;
+
+}
+
+
+.downList li a {
+    color: #6E4DA1;
+}
+
+.downList li {
+    padding-bottom: 5px;
+    top: -42px;
+    width: 120.6px;
+    left: -1px;
+    text-align: center;
+}
+
+
+.list ul li:hover .downList li:hover {
+
+    background-color: #000000;
+}
+
+/* centent部分 */
+.content {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+article .box {
+    float: left;
+    position: relative;
+    font-family: fontTwo;
+    width: 280px;
+    height: 170px;
+    color: white;
+    border-radius: 8px;
+    background: linear-gradient(to right top, #186BB8 10%, #3C94E7 70%, #248df0 100%);
+}
+
+article .box:hover {
+    transition: all 0.4s;
+    transform: translateY(-15px);
+}
+
+article h2 {
+    padding-top: 15px;
+    padding-left: 100px;
+    font-size: 35px;
+    font-family: fontOne;
+}
+
+article img {
+    position: absolute;
+    top: 73px;
+    left: 20px;
+}
+
+article p {
+    line-height: 1.6rem;
+    position: absolute;
+    top: 60px;
+    font-size: 0.9rem;
+    left: 90px;
+    width: 180px;
+}
+
+.moreFa {
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    background: linear-gradient(to top, #afaeae 30%, #FBFBFB);
+    right: 0px;
+    bottom: 0px;
+    border-radius: 18px 0 8px 0;
+}
+
+article a {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    display: block;
+    color: #39245A;
+    font-family: "Sans-serif";
+}
+
+article a:hover {
+    border-bottom: 1px solid #39245A;
+}
+
+article .one {
+    position: absolute;
+    top: 106px;
+}
+
+
+article .two {
+    position: absolute;
+    left: 350px;
+    top: 106px;
+}
+
+article .three {
+    position: absolute;
+    top: 370px;
+}
+
+article .four {
+    position: absolute;
+    left: 350px;
+    top: 370px;
+}
+
+/* info-box部分 */
+.info-box {
+    clear: both;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+
+}
+
+.info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+
+}
+
+.info-box li {
+    float: left;
+    list-style-type: none;
+    width: 107px;
+}
+
+.info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #886CB4;
+}
+
+.info-box li a:focus,
+.info-box li a:hover {
+    background-color: #886CB4;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #886CB4;
+    color: white;
+
+}
+
+.info-box .panels {
+    position: relative;
+    clear: both;
+}
+
+.info-box article {
+    position: absolute;
+    top: 0;
+    height: 370px;
+    width: 300px;
+    padding: 10px;
+    color: #886CB4;
+    background-color: #f7f7f7;
+}
+
+.info-box .active-panel {
+    z-index: 100;
+}
+
+.info-box li a.active {
+    background-color: #886CB4;
+    color: white;
+}
+
+.panels p {
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    letter-spacing: 2px;
+    left: 30px;
+    width: 270px;
+    line-height: 1.6;
+    text-indent: 2rem;
+    font-size: 1.1rem;
+}
+
+/* 下面文章部分 */
+
+.wenzhang {
+    height: 300px;
+    position: relative;
+    top: 580px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+article .article {
+    height: 408px;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+article .a1 {
+    background: linear-gradient(to bottom, #ADD1D5, white 40%);
+}
+
+article .a2 {
+    background: linear-gradient(to bottom, #C5B6A3, white 60%);
+}
+
+.article img {
+    width: 130px;
+    height: 190px;
+    border-radius: 6px;
+    position: absolute;
+    top: -19px;
+    left: 90px;
+}
+
+.wenzhang .massage {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+}
+
+.wenzhang .massage p {
+    position: initial;
+    font-size: 1.05rem;
+}
+
+.massage h3 {
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.wenzi {
+    font-family: sans-serif;
+    position: absolute;
+    width: 85%;
+    line-height: 2rem;
+    text-indent: 2rem;
+    margin: 0 auto;
+    top: 195px;
+    font-size: 1.1rem;
+}
+
+.read {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    top: 355px;
+    left: 430px;
+    background-color: #886CB4;
+    border-radius: 50px;
+}
+
+.read a {
+    padding-top: 3px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.wenzhang:hover {
+
+    transition: all 0.5s;
+    transform: scale(1.055);
+}
+
+
+
+.one {
+    top: 700px;
+}
+
+.two {
+    top: 990px;
+}
+
+/* 页脚 */
+footer {
+    border-top: 10px solid#2a8ae5;
+    height: 215px;
+    background-color: #2D243B;
+}
+
+.footer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer aside {
+    margin-left: -40px;
+}
+
+footer aside div {
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+footer aside div img {
+    width: 120px;
+    height: 120px;
+}
+
+footer aside div p {
+    font-size: 1.05rem;
+    color: #d5d5d5;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+footer article {
+
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 80px;
+
+}
+
+footer article p:nth-child(1) {
+    color: #2A8AE5;
+    font-size: 1.25rem;
+    margin-bottom: 3px;
+}
+
+footer article p {
+    font-size: 1.04rem;
+    color: #d5d5d5;
+    position: initial;
+    line-height: 1.8rem;
+    width: 665px;
+}
+
+footer article p:nth-child(4) {
+    margin-top: 5px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        @font-face {
+            font-family: "headerFont";
+            src: url(../fonts/Righteous.ttf);
+        }
+
+        @font-face {
+            font-family: "fontOne";
+            src: url(../fonts/杨任东竹石体.ttf);
+        }
+
+        @font-face {
+            font-family: "fontTwo";
+            src: url(../fonts/acier.ttf);
+        }
+
+
+        main {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: white;
+            color: #551A8B;
+            border-radius: 20px;
+        }
+
+        main div {
+            width: 70%;
+            margin: 0 auto;
+            letter-spacing: 3px;
+            line-height: 2.4rem;
+
+        }
+
+        main div h2 {
+            font-family: fontOne;
+            font-size: 3.4rem;
+            padding-top: 35px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        main div p {
+            padding-top: 20px;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            line-height: 50px;
+        }
+
+        main div:last-child {
+            padding-bottom: 90px;
+        }
+
+        main div {
+            padding-top: 300px;
+        }
+
+        main div:nth-child(1) {
+            padding-top: 60px;
+        }
+
+
+        /* 回到顶部按钮 */
+        .toTop {
+            position: fixed;
+            height: 130px;
+            width: 130px;
+            background-color: #2A8AE5;
+            background-image: url(../images/箭头_向上.png);
+            top: 620px;
+            right: 40px;
+            border-radius: 50%;
+        }
+
+        .toTop:hover {
+            transition: all 0.75s;
+            transform: rotatey(180deg);
+            background-color: #c49caf;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="search">
+            <form action="">
+                <input type="text" value="Search" id=" keyWorld">
+                <input type="submit" value="" id="searchButton"></form>
+
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="caption">
+            <h1>PERSONAL</h1>
+            <p>Blog by jsx</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">个人作品<span></span></a>
+                    <ul class="downList">
+                        <li><a href="workOne.html">Work one</a></li>
+                        <li><a href="workTwo.html">Work two</a></li>
+                        <li><a href="workThree.html">Work three</a></li>
+                    </ul>
+                </li>
+                <li><a href="blogDiary.html">个人博客日记</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../indexs/loveEvaluate.html">喜好评价</a></li>
+                <li><a href="../indexs/myInfo.html">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nowPosi">
+        <p> 你现在的位置是： <a href="../index.html">首页</a> > <a href="">Read More</a></p>
+    </div>
+    <main>
+        <div id=" ">
+            <h2>typedef和define有什么区别</h2>
+            <p>（1）原理不同
+
+                #define是C语言中定义的语法，是预处理指令，在预处理时进行简单而机械的字符串替换，不作正确性检查，只有在编译已被展开的源程序时才会发现可能的错误并报错。
+
+                typedef是关键字，在编译时处理，有类型检查功能。它在自己的作用域内给一个已经存在的类型一个别名，但不能在一个函数定义里面使用typedef。用typedef定义数组、指针、结构等类型会带来很大的方便，不仅使程序书写简单，也使意义明确，增强可读性。
+                <br>
+                （2）功能不同
+
+                typedef用来定义类型的别名，起到类型易于记忆的功能。另一个功能是定义机器无关的类型。如定义一个REAL的浮点类型，在目标机器上它可以获得最高的精度：typedef long double REAL，
+                在不支持long double的机器上，看起来是这样的，typedef double REAL，在不支持double的机器上，是这样的，typedef float REAL
+
+                #define不只是可以为类型取别名，还可以定义常量、变量、编译开关等。
+                <br>
+                （3）作用域不同
+
+                #define没有作用域的限制，只要是之前预定义过的宏，在以后的程序中都可以使用，而typedef有自己的作用域。
+                <br>
+
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <aside>
+                <div><img src="../images/qq.jpg" alt="">
+                    <p>我的QQ</p>
+                </div>
+                <div> <img src="../images/微信.jpg" alt="">
+                    <p>我的微信</p>
+                </div>
+            </aside>
+            <article>
+                <p>站点声明：</p>
+                <p>1.本站为个人博客，均为jxs本身设计，emm--对，少许借鉴，hh。</p>
+                <p>2.此战为jxs本身经过3天的努力，经过查阅资料，泛读互联网，总结出来的精华，必是精品，(⊙﹏⊙)em。</p>
+                <p>Copyright&copy; All by jxs.</p>
+            </article>
+        </div>
+    </footer>
+    <a href="">
+        <div class="toTop"></div>
+    </a>
+</body>
+
+</html>
